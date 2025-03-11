@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teja Lanka - Machine Learning Engineer</title>
+    <title>Teja Naga Subhash Lanka - Machine Learning Engineer</title>
     <style>
         :root {
             --primary: #0a192f;
@@ -224,6 +224,9 @@
             border-radius: 4px;
             padding: 2rem;
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
         .project-card:hover {
@@ -236,9 +239,20 @@
             color: var(--text);
         }
         
+        .project-title a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .project-title a:hover {
+            color: var(--accent);
+        }
+        
         .project-description {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
+            flex-grow: 1;
         }
         
         .project-tech {
@@ -251,6 +265,21 @@
         .tech-tag {
             font-size: 0.8rem;
             color: var(--text-secondary);
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .project-links a {
+            color: var(--text-secondary);
+            transition: color 0.3s;
+        }
+        
+        .project-links a:hover {
+            color: var(--accent);
         }
         
         /* Skills Section */
@@ -328,6 +357,7 @@
             color: var(--text-secondary);
             transition: color 0.3s;
             font-size: 1.2rem;
+            text-decoration: none;
         }
         
         .social-links a:hover {
@@ -339,7 +369,7 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">TL</div>
+                <div class="logo">TNS</div>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
@@ -372,7 +402,7 @@
                         <p>I'm particularly interested in computer vision and natural language processing, and I enjoy contributing to research in these areas. When I'm not coding, you might find me volunteering at various organizations or capturing moments as a photographer for the Anime Manga Club.</p>
                     </div>
                     <div class="about-image">
-                        <img src="/api/placeholder/300/300" alt="Teja Lanka">
+                        <img src="/api/placeholder/300/300" alt="Teja Naga Subhash Lanka">
                     </div>
                 </div>
             </div>
@@ -423,62 +453,80 @@
                 <h2 class="section-title">Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h3 class="project-title">Anime Colorization Model</h3>
+                        <h3 class="project-title"><a href="https://github.com/TSLanka/anime-colorization" target="_blank">Anime Colorization Model</a></h3>
                         <p class="project-description">Developed a model using Pix2Pix GAN for anime and manga colorization. (Capstone Project, Paper in Progress)</p>
                         <div class="project-tech">
                             <span class="tech-tag">PyTorch</span>
                             <span class="tech-tag">GAN</span>
                             <span class="tech-tag">Computer Vision</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TSLanka/anime-colorization" target="_blank">GitHub Repo</a>
+                        </div>
                     </div>
                     
                     <div class="project-card">
-                        <h3 class="project-title">Night-Time Object Detection</h3>
+                        <h3 class="project-title"><a href="https://github.com/TSLanka/night-time-detection" target="_blank">Night-Time Object Detection</a></h3>
                         <p class="project-description">Researched thermal imaging and object detection for autonomous vehicles. (Paper in Progress)</p>
                         <div class="project-tech">
                             <span class="tech-tag">Computer Vision</span>
                             <span class="tech-tag">Deep Learning</span>
                             <span class="tech-tag">Thermal Imaging</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TSLanka/night-time-detection" target="_blank">GitHub Repo</a>
+                        </div>
                     </div>
                     
                     <div class="project-card">
-                        <h3 class="project-title">License Plate Recognition</h3>
+                        <h3 class="project-title"><a href="https://github.com/TSLanka/license-plate-recognition" target="_blank">License Plate Recognition</a></h3>
                         <p class="project-description">Integrated YOLOv8 for vehicle detection and PaddleOCR for extracting license plate text.</p>
                         <div class="project-tech">
                             <span class="tech-tag">YOLOv8</span>
                             <span class="tech-tag">PaddleOCR</span>
                             <span class="tech-tag">Computer Vision</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TSLanka/license-plate-recognition" target="_blank">GitHub Repo</a>
+                        </div>
                     </div>
                     
                     <div class="project-card">
-                        <h3 class="project-title">Face Detection & Recognition</h3>
+                        <h3 class="project-title"><a href="https://github.com/TSLanka/face-recognition" target="_blank">Face Detection & Recognition</a></h3>
                         <p class="project-description">Implemented deep learning models (CNN, LBP, Haar Cascade) for image and video-based face recognition.</p>
                         <div class="project-tech">
                             <span class="tech-tag">CNN</span>
                             <span class="tech-tag">OpenCV</span>
                             <span class="tech-tag">Deep Learning</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TSLanka/face-recognition" target="_blank">GitHub Repo</a>
+                        </div>
                     </div>
                     
                     <div class="project-card">
-                        <h3 class="project-title">National Anthem Classification</h3>
+                        <h3 class="project-title"><a href="https://github.com/TSLanka/anthem-classification" target="_blank">National Anthem Classification</a></h3>
                         <p class="project-description">Used NLP techniques and k-means clustering to analyze 190 national anthems.</p>
                         <div class="project-tech">
                             <span class="tech-tag">NLP</span>
                             <span class="tech-tag">k-means</span>
                             <span class="tech-tag">Clustering</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TSLanka/anthem-classification" target="_blank">GitHub Repo</a>
+                        </div>
                     </div>
                     
                     <div class="project-card">
-                        <h3 class="project-title">IoT Powered Fire Extinguisher</h3>
+                        <h3 class="project-title"><a href="https://github.com/TSLanka/iot-fire-extinguisher" target="_blank">IoT Powered Fire Extinguisher</a></h3>
                         <p class="project-description">Published in IEEE ICCIGST-2024 (ISBN: 979-8-3503-8188-7/24)</p>
                         <div class="project-tech">
                             <span class="tech-tag">IoT</span>
                             <span class="tech-tag">IEEE Publication</span>
                             <span class="tech-tag">Industrial Safety</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TSLanka/iot-fire-extinguisher" target="_blank">GitHub Repo</a>
                         </div>
                     </div>
                 </div>
@@ -555,11 +603,11 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Github">GitHub</a>
-                <a href="#" aria-label="Email">Email</a>
+                <a href="https://www.linkedin.com/in/teja-subhash-lanka-b289a9241/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/TSLanka" target="_blank">GitHub</a>
+                <a href="mailto:tejasubhash.lanka@gmail.com">Email</a>
             </div>
-            <p>Designed & Built by Teja Lanka © 2025</p>
+            <p>Designed & Built by Teja Naga Subhash Lanka © 2025</p>
         </div>
     </footer>
 </body>
